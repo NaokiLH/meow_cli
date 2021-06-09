@@ -1,0 +1,11 @@
+name: meow
+version: "1.0"
+author: NaokiLH. <2629936804@qq.com>
+about: I am a cat,if you meow to me,i will meow to you
+args:
+    - meow:
+        short: m
+        long: meow
+        value_name: MEOW
+        help: the cat's voice
+        takes_value: true
