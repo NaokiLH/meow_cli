@@ -1,6 +1,7 @@
 #[macro_use]
 extern crate clap;
 use clap::App;
+use meow_cli::prime::get_factor::get_factor;
 fn main() {
     // The YAML file is found relative to the current file, similar to how modules are found
     let yaml = load_yaml!("cli.yml");
@@ -16,7 +17,17 @@ fn main() {
             println!("");
         }
         _ => {
-            "wrong input";
+            println!("wrong input");
+        }
+    }
+    match m.value_of("prime") {
+        Some(number) => {
+            let n: i32 = number.parse().unwrap();
+            let list = get_factor(n);
+            println!("{:?}", list);
+        }
+        _ => {
+            println!("wrong input");
         }
     }
 }

@@ -6,6 +6,12 @@ args:
     - meow:
         short: m
         long: meow
-        value_name: MEOW
+        value_name: times
         help: the cat's voice
         takes_value: true
+    - prime: 
+        short: p
+        long: prime
+        value_name: number
+        help: the cat will help you get the prime factor of number
+        take_value: true
