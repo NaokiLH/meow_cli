@@ -7,7 +7,10 @@ pub fn get_factor(x: u32) -> HashMap<u32, u32> {
     let primes = gen_prime(x);
     let mut number = x;
     for i in primes.iter() {
-        while x % i == 0 {
+        if number == 1 {
+            break;
+        }
+        while number % i == 0 {
             number = number / i;
             if list.contains_key(i) {
                 let value = list.get_mut(i).unwrap();

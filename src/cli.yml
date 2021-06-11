@@ -2,16 +2,16 @@ name: meow
 version: "1.0"
 author: NaokiLH. <2629936804@qq.com>
 about: I am a cat,if you meow to me,i will meow to you
-args:
+subcommands:
     - meow:
-        short: m
-        long: meow
-        value_name: times
-        help: the cat's voice
-        takes_value: true
-    - prime: 
-        short: p
-        long: prime
-        value_name: number
-        help: the cat will help you get the prime factor of number
-        take_value: true
+        about: the cat's voice
+        args: 
+            - times: 
+                required: true
+                help: a string key
+    - factor:
+        about: the cat will help you get the prime factor of number
+        args:
+            - number:
+                required: true
+                help: the number you want to factor
