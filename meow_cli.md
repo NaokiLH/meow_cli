@@ -5,6 +5,6 @@ NaokiLH's toy cli program
 - [x] factor 
 - [x] meow 
 - [x] resolver
-- [ ] Project4
+- [ ] Error handling
 - [ ] Project5
 - [ ] Project6
