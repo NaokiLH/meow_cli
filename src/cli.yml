@@ -15,3 +15,9 @@ subcommands:
             - number:
                 required: true
                 help: the number you want to factor
+    - resolver:
+        about: the cat help you resolver DNS
+        args:
+            - host:
+              required: true
+              help: the host you wanna resolver
