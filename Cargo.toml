@@ -10,3 +10,7 @@ edition = "2018"
 clap = { version = "*", features = ["yaml"] }
 trust-dns = "*"
 trust-dns-resolver = "*"
+reqwest = { version = "*", features = ["blocking", "json"] }
+openssl = { version = "*", features = ["vendored"] }
+serde_json = "*"
+serde = { version = "*", features = ["derive"] }

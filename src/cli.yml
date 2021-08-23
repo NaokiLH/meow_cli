@@ -21,5 +21,13 @@ subcommands:
         - host:
             required: true
             help: a string key
-  - list:
-      about:
+  - weather:
+      about: the cat tell your weather
+      args:
+        - set:
+          long: true
+          help: set your city
+          args:
+            - city:
+              required: true
+              help: you wanna know the city
