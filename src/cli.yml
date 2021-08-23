@@ -3,21 +3,23 @@ version: "1.0"
 author: NaokiLH. <2629936804@qq.com>
 about: I am a cat,if you meow to me,i will meow to you
 subcommands:
-    - meow:
-        about: the cat's voice
-        args: 
-            - times: 
-                required: true
-                help: a string key
-    - factor:
-        about: the cat will help you get the prime factor of number
-        args:
-            - number:
-                required: true
-                help: the number you want to factor
-    - resolver:
-        about: the cat help you resolver DNS
-        args:
-            - host:
-              required: true
-              help: the host you wanna resolver
+  - meow:
+      about: the cat's voice
+      args:
+        - times:
+            required: true
+            help: a string key
+  - factor:
+      about: the cat will help you get the prime factor of number
+      args:
+        - number:
+            required: true
+            help: you wanna know the factors of number
+  - resolver:
+      about: the cat help you resolver DNS
+      args:
+        - host:
+            required: true
+            help: a string key
+  - list:
+      about:

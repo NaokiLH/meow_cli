@@ -8,7 +8,6 @@ fn main() {
     let yaml = load_yaml!("cli.yml");
     let m = App::from_yaml(yaml).get_matches();
 
-    // Same as previous examples...
     match m.subcommand() {
         ("meow", Some(times)) => {
             let times = times.value_of("times").unwrap();
